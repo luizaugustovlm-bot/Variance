@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Proposta Comercial | Variance</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;600;700;800&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --v-dark: #39236A;
+      --v-mid: #67578C;
+      --v-accent: #FF3A5E;
+      --v-deep: #432682;
+      --v-bg: #f8f7fc;
+      --v-text: #261a47;
+    }
+
+    @page { size: A4; margin: 14mm; }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: #eceaf4;
+      color: var(--v-text);
+      font-family: "Montserrat", Arial, sans-serif;
+      line-height: 1.45;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    .page {
+      width: 210mm;
+      min-height: 297mm;
+      margin: 8mm auto;
+      padding: 12mm;
+      background: #fff;
+      border: 1px solid #dbd5eb;
+      box-shadow: 0 8px 24px rgba(57, 35, 106, 0.1);
+    }
+
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 10mm;
+      border-bottom: 3px solid var(--v-accent);
+      padding-bottom: 6mm;
+      margin-bottom: 7mm;
+    }
+
+    .brand {
+      font-family: "League Spartan", sans-serif;
+      font-size: 16pt;
+      color: var(--v-deep);
+      letter-spacing: .4px;
+    }
+
+    .brand span { color: var(--v-accent); }
+
+    .meta {
+      text-align: right;
+      font-size: 9.5pt;
+    }
+
+    h1, h2, h3 {
+      margin: 0;
+      font-family: "League Spartan", sans-serif;
+      color: var(--v-dark);
+    }
+
+    h1 {
+      font-size: 24pt;
+      letter-spacing: .3px;
+      margin-bottom: 2mm;
+    }
+
+    .subtitle {
+      font-size: 11pt;
+      font-weight: 600;
+      color: var(--v-mid);
+      margin: 0 0 7mm;
+    }
+
+    .chips {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 4mm;
+      margin-bottom: 7mm;
+    }
+
+    .chip {
+      border: 1px solid #ddd5f1;
+      border-radius: 8px;
+      padding: 3mm;
+      background: var(--v-bg);
+    }
+
+    .chip small {
+      color: var(--v-mid);
+      display: block;
+      font-size: 8pt;
+      text-transform: uppercase;
+      font-weight: 600;
+      letter-spacing: .6px;
+      margin-bottom: 1mm;
+    }
+
+    .chip strong {
+      font-family: "League Spartan", sans-serif;
+      font-size: 11pt;
+      color: var(--v-deep);
+    }
+
+    section {
+      margin-bottom: 6mm;
+      break-inside: avoid;
+    }
+
+    h2 {
+      font-size: 14pt;
+      margin-bottom: 2.3mm;
+      padding-left: 2mm;
+      border-left: 4px solid var(--v-accent);
+    }
+
+    h3 {
+      font-size: 11.5pt;
+      margin-bottom: 1.7mm;
+      color: var(--v-deep);
+    }
+
+    p { margin: 0 0 2.5mm; font-size: 9.7pt; }
+    ul { margin: 1.5mm 0 2.5mm 5mm; padding: 0; }
+    li { margin: 0 0 1.5mm; font-size: 9.5pt; }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 2.5mm 0 3.5mm;
+      font-size: 9pt;
+    }
+
+    th, td {
+      border: 1px solid #d8d2e9;
+      padding: 2.2mm;
+      vertical-align: top;
+    }
+
+    th {
+      background: #f0edfa;
+      color: var(--v-deep);
+      font-family: "League Spartan", sans-serif;
+      letter-spacing: .2px;
+      font-size: 9.2pt;
+    }
+
+    .highlight {
+      border: 1px solid #e8deff;
+      border-left: 6px solid var(--v-accent);
+      background: #fdfbff;
+      border-radius: 8px;
+      padding: 3mm 3.5mm;
+      font-size: 9.5pt;
+      margin: 3mm 0;
+    }
+
+    .footer {
+      margin-top: 8mm;
+      border-top: 2px solid var(--v-deep);
+      padding-top: 4mm;
+      font-size: 9pt;
+      color: var(--v-mid);
+    }
+
+    .page-break { break-before: page; }
+
+    @media print {
+      body { background: #fff; }
+      .page { margin: 0; border: none; box-shadow: none; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="topbar">
+      <div>
+        <div class="brand">Var<span>i</span>ance Tech Ltda.</div>
+        <h1>PROPOSTA COMERCIAL</h1>
+        <p class="subtitle">Programa Seja Digital IA Lab • Capacitação Hands-On e Letramento em IA para Equipes</p>
+      </div>
+      <div class="meta">
+        <div><strong>DATA:</strong> São Paulo, maio de 2026</div>
+        <div><strong>REFERÊNCIA:</strong> VAR-SD-2026-002</div>
+      </div>
+    </header>
+
+    <div class="chips">
+      <div class="chip"><small>Cliente</small><strong>SEJA DIGITAL</strong></div>
+      <div class="chip"><small>Documento</small><strong>PROPOSTA COMERCIAL</strong></div>
+      <div class="chip"><small>Referência</small><strong>VAR-SD-2026-002</strong></div>
+    </div>
+
+    <section>
+      <h2>1. Contexto e Diagnóstico</h2>
+      <p>A Seja Digital encontra-se em um ponto de inflexão na sua jornada de adoção de IA: os colaboradores reconhecem o potencial da tecnologia e exploram ferramentas em iniciativas pontuais, porém a organização ainda opera majoritariamente no quadrante de baixo alcance e baixo impacto — uso individual, esporádico, sem padronização, sem reaproveitamento e sem mensuração de ROI.</p>
+      <p>A consequência desse estágio inicial é estrutural:</p>
+      <ul>
+        <li>Conhecimento concentrado em poucos colaboradores, sem escala corporativa;</li>
+        <li>Agentes e fluxos construídos de forma isolada, sem padrão nem biblioteca de reuso;</li>
+        <li>Ausência de critérios claros para identificar oportunidades reais de aplicação de IA;</li>
+        <li>Falta de princípios de uso responsável que garantam segurança jurídica e de dados;</li>
+        <li>Risco competitivo crescente frente a concorrentes que já operam IA em escala.</li>
+      </ul>
+      <p>A Variance foi demandada a desenhar e conduzir um programa intensivo de 10 semanas com foco em learn by doing — não treinamento teórico, mas construção real de agentes de IA aplicados às rotinas da Seja Digital, com transferência de conhecimento mensurável via matriz de maturidade. O objetivo é deslocar a organização do Quadrante 1 (uso individual / baixo impacto) para o Quadrante 4 (uso corporativo / alto impacto) em até 10 semanas.</p>
+    </section>
+
+    <section>
+      <h2>2. Solução Proposta</h2>
+      <h3>2.1 Programa IA Lab — Estrutura em 4 Etapas</h3>
+      <p>O programa é executado em 4 etapas consecutivas com sobreposição controlada de trilhas, totalizando 54 horas estruturadas de capacitação prática ao longo de 10 semanas.</p>
+      <table>
+        <thead><tr><th>ETAPA</th><th>OBJETIVO</th><th>DURAÇÃO</th><th>CARGA</th></tr></thead>
+        <tbody>
+          <tr><td>E1 — Kick-off, Nivelamento e Diagnóstico Prático</td><td>Alinhar entendimento executivo, mapear oportunidades por área e estabelecer a matriz inicial de maturidade</td><td>Semana 1</td><td>12h</td></tr>
+          <tr><td>E2 — Capacitação Prática e Construção Inicial</td><td>Desenvolver os primeiros agentes simples aplicados a casos reais das rotinas dos colaboradores</td><td>Semanas 2–5</td><td>32h</td></tr>
+          <tr><td>E3 — Evolução para Aplicações Estruturadas</td><td>Ampliar complexidade com squads de agentes, orquestração e vibe coding</td><td>Semanas 6–8</td><td>36h</td></tr>
+          <tr><td>E4 — Consolidação, Escala e Maturidade</td><td>Garantir reuso via biblioteca, código de princípios e avaliação final</td><td>Semanas 9–10</td><td>20h</td></tr>
+        </tbody>
+      </table>
+
+      <h3>2.2 Trilhas de Capacitação</h3>
+      <table>
+        <thead><tr><th>TRILHA</th><th>CONTEÚDO</th><th>ATIVIDADE PRÁTICA</th><th>CARGA</th></tr></thead>
+        <tbody>
+          <tr><td>T1a — Nivelamento Executivo e Oportunidades</td><td>Fundamentos de IA Generativa, mapeamento de oportunidades por área e calibração do entendimento executivo</td><td>Workshop de oportunidades aplicado às áreas reais da Seja Digital</td><td>6h</td></tr>
+          <tr><td>T1b — Criação de Agentes Simples</td><td>Construção dos primeiros agentes aplicados às rotinas individuais dos participantes</td><td>Cada participante constrói pelo menos 1 agente funcional ao final da trilha</td><td>10h</td></tr>
+          <tr><td>T2 — Squad de Agentes</td><td>Composição de squads de agentes especializados para fluxos multi-etapas</td><td>Construção de um fluxo multi-agente em caso real do cliente</td><td>12h</td></tr>
+          <tr><td>T3 — Vibe Coding e Orquestração</td><td>Desenvolvimento assistido por IA, orquestração de fluxos e integrações entre agentes</td><td>Implementação de orquestração com integrações reais, passando por arquitetura e infraestrutura</td><td>12h</td></tr>
+          <tr><td>T4 — Biblioteca de Agentes</td><td>Padronização, documentação e biblioteca corporativa de reuso</td><td>Organização da biblioteca interna com os agentes desenvolvidos</td><td>8h</td></tr>
+          <tr><td>T5 — Guia e Princípios</td><td>Código de Princípios de uso responsável e boas práticas operacionais</td><td>Co-construção do documento final com a equipe Seja Digital</td><td>6h</td></tr>
+        </tbody>
+      </table>
+      <p><strong>Carga horária total estruturada: 54 horas</strong></p>
+
+      <h3>2.3 Modelo de Execução</h3>
+      <ul>
+        <li>1 dia presencial por semana (8h) — sessões de construção e capacitação hands-on;</li>
+        <li>Sessões remotas complementares de 2h a 4h por semana — apoio assíncrono, revisão de agentes em construção e ajustes pontuais;</li>
+        <li>Dinâmica integralmente prática — construção em tempo real, com casos reais da Seja Digital;</li>
+        <li>Acompanhamento contínuo da matriz de maturidade ao longo das 10 semanas.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>3. Matriz de Maturidade em IA</h2>
+      <p>A evolução do programa é mensurada por uma matriz bidimensional aplicada na Etapa 1 e revalidada na Etapa 4 — entregando evidência objetiva de transformação, não apenas certificados de participação.</p>
+      <table>
+        <thead><tr><th>EIXO</th><th>DESCRIÇÃO</th></tr></thead>
+        <tbody>
+          <tr><td>Eixo X — Alcance</td><td>Individual → Equipe → Área → Corporativo</td></tr>
+          <tr><td>Eixo Y — Impacto</td><td>Baixo → Médio → Alto → Estratégico</td></tr>
+        </tbody>
+      </table>
+      <table>
+        <thead><tr><th>MOMENTO</th><th>POSIÇÃO ESPERADA</th></tr></thead>
+        <tbody>
+          <tr><td>Diagnóstico inicial (Semana 1)</td><td>Quadrante 1 — Baixo alcance / Baixo impacto</td></tr>
+          <tr><td>Avaliação final (Semana 10)</td><td>Quadrante 4 — Alto alcance / Alto impacto</td></tr>
+          <tr><td>Entregável</td><td>Documento de evidência da evolução com casos aplicados e métricas comparativas</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="page-break">
+      <h2>4. Entregáveis do Programa</h2>
+      <ul>
+        <li>Execução completa das trilhas T1a, T1b, T2, T3, T4 e T5 (54h estruturadas);</li>
+        <li>Conjunto de agentes desenvolvidos pelos próprios colaboradores, aplicados a rotinas reais;</li>
+        <li>Biblioteca interna de agentes — padronizada, documentada e pronta para reuso;</li>
+        <li>Código de Princípios da Seja Digital para uso responsável de IA;</li>
+        <li>Matriz de Maturidade aplicada antes e depois, com evidência de evolução;</li>
+        <li>Guia prático operacional para sustentação do programa após o encerramento;</li>
+        <li>Apoio na indicação de coaches internos para continuidade da jornada.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>5. Impacto Esperado</h2>
+      <p>Estimativa de transformação organizacional ao final das 10 semanas, baseada em benchmarks de programas similares conduzidos pela Variance:</p>
+      <table>
+        <thead><tr><th>INDICADOR</th><th>CENÁRIO ATUAL</th><th>PÓS-PROGRAMA</th></tr></thead>
+        <tbody>
+          <tr><td>Posição na matriz de maturidade</td><td>Quadrante 1 (baixo alcance / baixo impacto)</td><td>Quadrante 4 (alto alcance / alto impacto)</td></tr>
+          <tr><td>Agentes em uso ativo</td><td>Iniciativas isoladas e não padronizadas</td><td>Biblioteca corporativa documentada e reutilizável</td></tr>
+          <tr><td>Autonomia da equipe</td><td>Dependência de terceiros para criar agentes</td><td>Construção interna de novos agentes</td></tr>
+          <tr><td>Padrão de uso responsável</td><td>Ausente ou informal</td><td>Código de Princípios formalizado</td></tr>
+          <tr><td>Tempo para criar um novo agente</td><td>Não mensurável (caso a caso)</td><td>Horas, com base na biblioteca de reuso</td></tr>
+          <tr><td>Identificação de oportunidades</td><td>Pontual e reativa</td><td>Estruturada por área e por critério de ROI</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>6. Cronograma Executivo</h2>
+      <table>
+        <thead><tr><th>FASE</th><th>SEMANA</th><th>ATIVIDADE</th><th>ENTREGÁVEL</th></tr></thead>
+        <tbody>
+          <tr><td>F1</td><td>Semana 1</td><td>Kick-off, nivelamento executivo (T1a) e diagnóstico de maturidade</td><td>Matriz de maturidade inicial + mapa de oportunidades por área</td></tr>
+          <tr><td>F2</td><td>Semanas 2–3</td><td>Trilha T1b — fundamentos e primeiros agentes</td><td>Primeiros agentes individuais funcionando</td></tr>
+          <tr><td>F3</td><td>Semanas 4–5</td><td>Casos aplicados de T1b</td><td>Conjunto inicial de agentes aplicados a rotinas reais</td></tr>
+          <tr><td>F4</td><td>Semanas 6–7</td><td>Trilha T2 — Squad de Agentes</td><td>Primeiro fluxo multi-agente em produção</td></tr>
+          <tr><td>F5</td><td>Semana 8</td><td>Trilha T3 — Vibe Coding e Orquestração</td><td>Agentes orquestrados em fluxos complexos</td></tr>
+          <tr><td>F6</td><td>Semana 9</td><td>Trilha T4 — Biblioteca de Agentes</td><td>Biblioteca corporativa padronizada de reuso</td></tr>
+          <tr><td>F7</td><td>Semana 10</td><td>Trilha T5 + Avaliação Final</td><td>Código de Princípios + Matriz Final + Encerramento</td></tr>
+        </tbody>
+      </table>
+      <p><strong>Prazo total:</strong> 10 semanas a partir da assinatura do contrato e definição da agenda de sessões com a Seja Digital.</p>
+    </section>
+
+    <section>
+      <h2>7. Investimento</h2>
+      <p>O programa pode ser contratado em uma das duas modalidades abaixo, mantendo o mesmo valor total e o mesmo escopo de entrega.</p>
+      <h3>Pacote Fechado</h3>
+      <table>
+        <thead><tr><th>ESCOPO</th><th>MODALIDADE</th><th>VALOR</th></tr></thead>
+        <tbody>
+          <tr><td>Programa Completo Seja Digital IA Lab — 10 semanas · 4 etapas · 6 trilhas · 54h estruturadas · Matriz de Maturidade · Biblioteca de Agentes · Código de Princípios · Acompanhamento contínuo</td><td>Projeto fixo</td><td>R$ 108.000,00</td></tr>
+          <tr><td><strong>INVESTIMENTO TOTAL DO PROGRAMA</strong></td><td>Pacote único</td><td><strong>R$ 108.000,00</strong></td></tr>
+        </tbody>
+      </table>
+      <div class="highlight">
+        <strong>Forma de Pagamento Sugerida</strong>
+        <ul>
+          <li>30% na assinatura do contrato e kick-off (R$ 32.400,00);</li>
+          <li>30% no início da Etapa 3 — Semana 6 (R$ 32.400,00);</li>
+          <li>40% na entrega final com validação da Seja Digital — Semana 10 (R$ 43.200,00).</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>8. Por que a Variance</h2>
+      <p><strong>Especialização.</strong> Não somos consultoria genérica. Somos integradores de IA com entregas já funcionando em produção para clientes como PicPay, Stellantis, Vigor, Grupo Gaia, Suhai e outros — combinando programas de capacitação e agentes em operação real.</p>
+      <p><strong>Transfer de Conhecimento.</strong> O modelo learning by doing é o coração do programa: os colaboradores constroem seus próprios agentes ao vivo, com casos reais da Seja Digital. Ao final, a equipe opera com autonomia — sem dependência de terceiros para evoluir a solução.</p>
+      <p><strong>Segurança Jurídica e de Dados.</strong> Desenvolvemos com boas práticas de privacidade e segurança — os dados da Seja Digital não saem do seu ambiente. O Código de Princípios entregue formaliza esses padrões para uso corporativo continuado.</p>
+      <p><strong>Proximidade.</strong> Time baseado em São Paulo, com disponibilidade para sessões presenciais semanais ao longo das 10 semanas do programa.</p>
+    </section>
+
+    <section>
+      <h2>9. Próximos Passos</h2>
+      <p>01 Assinatura do contrato de prestação de serviços e kick-off formal do programa;</p>
+      <p>02 Início imediato da Etapa 1 (Kick-off, Nivelamento e Diagnóstico) conforme agenda acordada com a Seja Digital.</p>
+      <p class="highlight">Esta proposta tem validade de 15 dias a partir da data de emissão.</p>
+    </section>
+
+    <footer class="footer">
+      Variance Tech Ltda. • São Paulo, SP • Referência: VAR-SD-2026-002
+    </footer>
+  </main>
+</body>
+</html>
